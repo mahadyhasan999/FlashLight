@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+            <EditText
+                android:id="@+id/timerEditText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:autofillHints="0"
+                android:hint="Set timer in sec"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:inputType="number"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toTopOf="@+id/sosButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <Button
+                android:id="@+id/flashlightButton"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="150dp"
+                android:gravity="center"
+                android:text="Toggle Flashlight"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/strobeButton"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:text="Strobe Light"
+                app:layout_constraintBottom_toTopOf="@+id/flashlightButton"
+                app:layout_constraintEnd_toEndOf="@+id/flashlightButton"
+                app:layout_constraintStart_toStartOf="@+id/flashlightButton" />
+
+            <Button
+                android:id="@+id/sosButton"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="20dp"
+                android:text="SOS"
+                app:layout_constraintBottom_toTopOf="@+id/strobeButton"
+                app:layout_constraintEnd_toEndOf="@+id/strobeButton"
+                app:layout_constraintStart_toStartOf="@+id/strobeButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
